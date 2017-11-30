@@ -7,6 +7,8 @@ import grovepi
 # SIG,NC,VCC,GND
 electromagnet = 4
 
+# something
+
 grovepi.pinMode(electromagnet,"OUTPUT")
 time.sleep(1)
 
