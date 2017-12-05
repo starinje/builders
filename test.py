@@ -7,30 +7,30 @@ print "hello world"
 
 # Connect the Grove Electromagnet to digital port D4
 # SIG,NC,VCC,GND
-# electromagnet = 4
+electromagnet = 7
 
 # something
 
-# grovepi.pinMode(electromagnet,"OUTPUT")
-# time.sleep(1)
+grovepi.pinMode(electromagnet,"OUTPUT")
+time.sleep(1)
 
-# while True:
-#   try:
-#     # Switch on electromagnet
-#     grovepi.digitalWrite(electromagnet,1)
-#     print "on"
-#     time.sleep(2)
+while True:
+  try:
+    # Switch on electromagnet
+    grovepi.digitalWrite(electromagnet,1)
+    print "on"
+    time.sleep(2)
 
-#     # Switch off electromagnet
-#     grovepi.digitalWrite(electromagnet,0)
-#     print "off"
-#     time.sleep(2)
+    # Switch off electromagnet
+    grovepi.digitalWrite(electromagnet,0)
+    print "off"
+    time.sleep(2)
 
-#   except KeyboardInterrupt:
-#     grovepi.digitalWrite(electromagnet,0)
-#     break
-#   except IOError:
-#     print "Error"
+  except KeyboardInterrupt:
+    grovepi.digitalWrite(electromagnet,0)
+    break
+  except IOError:
+    print "Error"
 
 
 
