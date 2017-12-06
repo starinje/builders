@@ -3,13 +3,9 @@ import grovepi
 
 print "hello world"
 
-# Barkers test of the process
 # The electromagnet can hold a 1KG weight
-
-# Connect the Grove Electromagnet to digital port D4
 # SIG,NC,VCC,GND
-electromagnet_1 = 7
-electromagnet_2 = 8
+electromagnet = 7
 
 # something
 
@@ -19,8 +15,7 @@ time.sleep(1)
 while True:
   try:
     # Switch on electromagnet
-    grovepi.digitalWrite(electromagnet_1,1)
-    grovepi.digitalWrite(electromagnet_2,1)
+    grovepi.digitalWrite(electromagnet,1)
     print "turning on"
     time.sleep(100)
 
