@@ -3,6 +3,7 @@ import grovepi
 
 print "hello world"
 
+# Barkers test of the process
 # The electromagnet can hold a 1KG weight
 
 # Connect the Grove Electromagnet to digital port D4
